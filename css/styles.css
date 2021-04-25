@@ -200,3 +200,60 @@ body {
     border-radius: 50%;
     shape-outside: circle();
 }
+
+#button {
+    float:right;
+    clear: both;
+}
+.button{display: none;}
+
+
+@media  screen and (max-width: 500px) {
+
+
+    .showcase::after {
+        height: 85vh;
+        filter: none;
+        transition: none;
+    }
+    .content {top: 5px;}
+    .content img { width: 150px;}
+    .content .title {
+        top: 30%;
+        font-size: 15px;
+    }
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        padding: 5px;
+    }
+    .nav-links li a {
+        border: hidden;
+    }
+
+    .about .cent {
+        display: none;
+    }
+    .about .grid {
+        display: flex;
+    }
+    .about .text {
+        text-align: justify;
+        width: auto;
+    }
+    
+    .gallery {
+        height: 50vh;
+    }
+  
+ 
+}
